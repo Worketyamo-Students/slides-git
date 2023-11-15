@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Github</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-contrast.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<a href="https://worketyamo.itengineeringpro.fr">
+					<img src="https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg"
+						alt="Github Logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;"
+						class="demo-logo">
+				</a>
+				<h2>Introduction à Git & Github</h2>
+				<p>
+					<small>Created by <a href="http://hakim.se">Haruna Rashid Yakubu</a> for <a
+							href="https://github.com/hakimel/reveal.js/graphs/contributors">Worketyamo</a></small>
+				</p>
+				<aside class="notes">
+					Shhh, these are your private notes 📝
+				</aside>
+			</section>
+
+			<section>
+				<section>
+					<h1>Sommaire</h1>
+				</section>
+				<section id="fragments">
+					<h1>Sommaire</h1>
+					<ol>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Introduction à Git Et Github</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Qu'est-ce que Git ?</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Qu'est-ce que GitHub ?</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Différences entre Git et GitHub</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Avantages de Git et GitHub</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Exemples de projets qui utilisent Git et GitHub</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Les commandes Git</h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Exemples N° 1 </h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Commandes avancées </h6>
+						</li>
+						<li class="fragment fade-in-then-semi-out">
+							<h6>Conclusion
+							</h6>
+						</li>
+					</ol>
+					<aside class="notes">
+						This slide has fragments which are also stepped through in the notes window.
+					</aside>
+				</section>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<section>
+					<h2>Introduction:
+					</h2>
+					<p>Git et GitHub sont deux outils essentiels pour tout développeur.
+					</p>
+					<p>Ils permettent de gérer les projets de manière efficace et de collaborer avec d'autres personnes.
+					</p>
+					<br>
+
+				</section>
+				<section>
+					<h2>Qu'est-ce que Git ?</h2>
+					<li class="fragment fade-right">Un logiciel de gestion de version</li>
+					<li class="fragment fade-right">Permet de suivre les modifications apportées à un projet
+						au fil du temps</li>
+					<li class="fragment fade-right">Utilise un système de branches pour gérer les différentes
+						versions d'un projet</li>
+				</section>
+
+				<section>
+					<h2>Exemples de modifications :</h2>
+					<li class="fragment fade-in-then-semi-out">Ajout de fonctionnalités
+					</li>
+					<li class="fragment fade-in-then-semi-out">Correction de bugs</li>
+					<li class="fragment fade-in-then-semi-out">Amélioration des performances</li>
+				</section>
+			</section>
+
+			<section>
+				<h2>Qu'est-ce que GitHub ?</h2>
+				<li class="fragment fade-in-then-semi-out">Une plateforme d'hébergement de dépôts Git</li>
+				<li class="fragment fade-in-then-semi-out">Permet de partager des projets Git avec d'autres personnes
+				</li>
+				<li class="fragment fade-in-then-semi-out">Offre de nombreuses fonctionnalités supplémentaires, telles
+					que la collaboration, le suivi des problèmes et la gestion des tickets</li>
+			</section>
+
+			<section>
+				<h2>Exemples de fonctionnalités de collaboration :</h2>
+				<p>
+					Pull requests,
+					Code review,
+					Discussions,
+				</p>
+			</section>
+			</section>
+
+
+			<section data-visibility="hidden">
+				<h2>Hidden Slides</h2>
+				<p>
+					This slide is visible in the source, but hidden when the presentation is viewed. You can show all
+					hidden slides by setting the `showHiddenSlides` config option to `true`.
+				</p>
+			</section>
+			<section>
+				<section>
+					<h1 class="r-fit-text">Initialisation d'un Repository</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+			git init
+			</code></h2></pre>
+					<p style="text-align: left;">cette commande crée un nouveau dépôt Git.
+						Elle peut être utilisée pour convertir un projet existant, sans version en un dépôt Git, ou pour
+						initialiser un nouveau dépôt vide.</p>
+				</section>
+
+				<section>
+					<h2>Exemples </h2>
+					<video  autoplay loop  src="./assets/git-init.webm" autoplay loop>
+					</video>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h1 class="r-fit-text">Ajout des Fichiers au Repository</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+			git add 
+			</code></h2></pre>
+					<p style="text-align: left;">Cette commande est utilisée pour ajouter les differents fichiers ou
+						dossier au repository</p>
+				</section>
+
+				<section>
+					<h2>Exemples </h2>
+					<video  autoplay loop  src="./assets/git-add.webm" autoplay loop>
+					</video>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h1 class="r-fit-text">Premier commit syntaxe</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+			git commit -m "nom du commit"
+			</code></h2></pre>
+					<p style="text-align: left;">Un commit est une instantanée des modifications apportées à un projet à
+						un moment donné. Il permet de suivre les modifications au fil du temps et de revenir à une
+						version antérieure du projet. </p>
+				</section>
+
+				<section>
+					<h2>Exemples </h2>
+					<video  autoplay loop  src="./assets/git-commit.webm" autoplay loop>
+					</video>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1 class="r-fit-text">Création de la branche principale</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+			git branch -M "nomDeLaBranche"
+			</code></h2></pre>
+					<p style="text-align: left;">Une branche dans Git est comme une copie du projet, avec ses propres
+						modifications. Vous pouvez créer autant de branches que vous le souhaitez, et travailler sur
+						chacune d'elles en toute sécurité sans affecter les autres.
+					</p>
+				</section>
+
+				<section>
+					<h2>Exemples </h2>
+					<video  autoplay loop  src="./assets/branche.webm" autoplay loop>
+					</video>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1 class="r-fit-text">Remote Repository</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+						git remote add "nom du repo" "lien du repo"
+			</code></h2></pre>
+					<p style="text-align: left;">Un dépôt distant dans Git est un dépôt Git accessible à distance, par
+						exemple sur un serveur web ou sur un réseau local. Il permet de partager votre travail avec
+						d'autres personnes, et de collaborer sur des projets.
+
+
+					</p>
+				</section>
+
+				<section>
+					<h2>Exemples </h2>
+					<video  autoplay loop  src="./assets/remote.webm" autoplay loop>
+					</video>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h1 class="r-fit-text">Synchronisation des repository</h1>
+					<h1> local-distant</h1>
+				</section>
+				<section data-auto-animate>
+					<pre data-id="code-animation"><h2><code class="bash sh zsh" data-trim data-line-numbers>
+						git push -u "nom du repository" "nom de la branche principale"
+			</code></h2></pre>
+					<p style="text-align: left;">Ici il s'agit de pousser les references locales vers le repository distant 
+					</p>
+				</section>
+
+				<section>
+					<h2>Demo </h2>
+				</section>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="node_modules/reveal-notes-server/client.js"></script>
+</body>
+
+</html>
